@@ -7,6 +7,7 @@ function uniqueArray(arr) {
   for (var i = 0; i < arr.length; i++) {
     if (!hashMap.hasOwnProperty(arr[i])) {
       uniqueArr.push(arr[i]);
+      hashMap[arr[i]] = i;
     }
   }
   return uniqueArr;
