@@ -40,15 +40,15 @@ validation-report.json
 
 # Folders to ignore
 node_modules
+Project-Note-PAUL
 
 # Ignore all logfiles and tempfiles.
 !/log/.keep
 /tmp
 /.gems
 
-testing-code-3.js
-testing-scribling-code.js
-testing-code-1.js
-testing-4.js
-test-5.js
-Cracking-The-Coding-Interview-Note-Gitignore-IT.odt
+random-code-1.js
+random-code-2.js
+random-code-3.js
+random-code-4.js
+performance-1.js

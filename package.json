@@ -4,7 +4,7 @@
   "description": "",
   "main": "Readme.md",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha --reporter spec"
   },
   "author": "Rohan Paul",
   "keywords": [
@@ -14,7 +14,9 @@
   ],
   "license": "ISC",
   "devDependencies": {
+    "babel-core": "^6.26.0",
     "chai": "^4.1.2",
-    "mocha": "^4.0.1"
+    "mocha": "^4.0.1",
+    "tape": "^4.8.0"
   }
 }
