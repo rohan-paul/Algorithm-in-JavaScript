@@ -24,9 +24,12 @@ function insertion_sort(array) {
     var i, j;
 
    /*
-   1. Assume first element is sorted
-   2. Add first unsorted element to sorted array
-   3. Compare new element in sorted array with previous elements to determine correct destination index in sorted array
+   1. Assume first element is sorted. So, Loop from i = 1 (second element of the array) to n-1.
+
+   2. Add first unsorted element to sorted array.
+
+   3. Compare new element in sorted array with previous elements to determine correct destination index in sorted array. Say I get 12, 11 as the second and third element. Since 11 is smaller than 12, move 12 and insert 11 before 12
+
    4. In the below, at the last step, I had to decrement j by one, to stop the while loop. Because, with the decremented value of j, in the next iteration of the loop, one of the while loop condition will fail
    */
 

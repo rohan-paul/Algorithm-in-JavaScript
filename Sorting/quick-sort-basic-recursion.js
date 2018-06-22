@@ -33,12 +33,6 @@ function quickSortBasic(array) {
 
 /******************* Testing Quick sort algorithm *********************/
 
-// Returns a random integer between min (inclusive) and max (inclusive). Using Math.round() will give a non-uniform distribution, which we dont want in this case.
-
-function getRandomInt(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
 let arr = Array.from({length : 20}, () => Math.floor(Math.random() * 20));
 
 console.log(arr); //printing unsorted array
