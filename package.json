@@ -4,7 +4,8 @@
   "description": "",
   "main": "Readme.md",
   "scripts": {
-    "test": "./node_modules/.bin/mocha --reporter spec"
+    "tdd": "ava **/*.js -w",
+    "test": "ava **/*.js"
   },
   "author": "Rohan Paul",
   "keywords": [
@@ -18,5 +19,8 @@
     "chai": "^4.1.2",
     "mocha": "^4.0.1",
     "tape": "^4.8.0"
+  },
+  "dependencies": {
+    "ava": "^0.25.0"
   }
 }

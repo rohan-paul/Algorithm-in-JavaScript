@@ -30,7 +30,7 @@ function insertion_sort(array) {
 
    3. Compare new element in sorted array with previous elements to determine correct destination index in sorted array. Say I get 12, 11 as the second and third element. Since 11 is smaller than 12, move 12 and insert 11 before 12
 
-   4. In the below, at the last step, I had to decrement j by one, to stop the while loop. Because, with the decremented value of j, in the next iteration of the loop, one of the while loop condition will fail
+   4. In the below, I have done the insertion operation with the swap function.
    */
 
    for (i = 1; i < array.length; i++) {
