@@ -9,7 +9,7 @@ swap = (arr, i, j) => {
   arr[j] = temp;
 }
 
-// Necessary warning :) :) - this is a super basic implementation  to understand the principle behind bubble sort (going through all comparisons) but there's huge room for performance improvement on this.
+// SOLUTION-1 - Necessary warning :) :) - this is a super basic implementation  to understand the principle behind bubble sort (going through all comparisons) but there's huge room for performance improvement on this.
 
 bubbleSortBasicAscending = (arr) => {
 
@@ -39,7 +39,7 @@ bubbleSortBasicDescending = (arr) => {
 
 console.log(bubbleSortBasicDescending(array1));
 
-/* A more optimal solution, by reducing some of the loop execution are not done in this solution.
+/* SOLUTION - 2 - A more optimal solution, by reducing some of the loop execution are not done in this solution.
 So, here, I only do the loops and swaps for the cases when I find a mis-placed element, i.e. larger-element placed before smaller in an ascending sort
 */
 bubbleSortAscending = arr => {

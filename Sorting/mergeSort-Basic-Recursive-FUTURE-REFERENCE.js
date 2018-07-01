@@ -1,8 +1,8 @@
-// ROHAN'S NOTE IS TO REFER HERE IN FUTURE - Implementation of merge-sort algorithm, to sort an array of numbers in O(N×log(N)) time.
+// ROHAN'S NOTE HERE FOR FUTURE REFERENCE - Implementation of merge-sort algorithm, to sort an array of numbers in O(N×log(N)) time.
 
 /* https://www.geeksforgeeks.org/merge-sort/
 
-Like QuickSort, Merge Sort is a Divide and Conquer algorithm. It divides input array in two halves, calls itself for the two halves and then merges the two sorted halves. The merge() function is used for merging two halves. The merge(arr, l, m, r) is key process that assumes that arr[l..m] and arr[m+1..r] are sorted and merges the two sorted sub-arrays into one. See following pseudo-code.
+Like QuickSort, Merge Sort is a Divide and Conquer algorithm. It divides input array in two halves, calls itself for the two halves and then merges the two sorted halves. The helper function merge2SortedArrays() is used for merging two halves. The merge(arr, l, m, r) is key process that assumes that arr[l..m] and arr[m+1..r] are sorted and merges the two sorted sub-arrays into one. See following pseudo-code.
 
 MergeSort(arr[], l,  r)
 If r > l
@@ -24,7 +24,7 @@ A> The array is recursively divided in two halves till the size becomes 1.
 
 B> Once the size becomes 1, the merge processes comes into action, meaning I invoke the merge function on the 2 single-element arrays. That is, take adjacent pairs of two singleton lists, sort the elements of the 2 list, and merge them to form a list (ie array) of 2 elements .
 
-C> So the merge() function below is a completely independent function and will just take 2 sorted-arrays ( the individual arrays MUST BE SORTED ),  and then concat the elements to forma a single SORTED array. That is, within the merge() function before pushing the elements to the final result array (which will be the output from merge ) it checks for proper-sorting between the 2 elements on the 2 arrays.
+C> So the merge2SortedArrays() function below is a completely independent function and will just take 2 sorted-arrays ( the individual arrays MUST BE SORTED ),  and then concat the elements to forma a single SORTED array. That is, within the merge() function before pushing the elements to the final result array (which will be the output from merge ) it checks for proper-sorting between the 2 elements on the 2 arrays.
 
 merge( [1, 3, 5, 7 ] , [ 2, 4, 6, 8] ) >>  will produce the below
 
