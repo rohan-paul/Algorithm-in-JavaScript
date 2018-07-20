@@ -14,14 +14,15 @@ insertionSort = arr => {
   let array = arr.slice(0);
 
 
-/* A>  Here each time I find aff[i] < arr[j] I effectively have to swap the position of i and j.
+/* 
+A>  Here each time I find arr[i] < arr[j] I effectively have to swap the position of i and j.
 B> But instead of using a swap function, I returned a spliced array where the j-th position is replaced with i-th position.
 
 C> Note, < arr.splice(j, 0, 'item')  > means that at j-th position I am placing the element 'item' while removing zero element from the array.
 
 AND remember array.splice() MUTATES THE ORIGINAL ARRAY AND RETURN THAT MUTATED ARRAY
 
-D> And  < arr.splice(i, 1)[0] > will delete 1 element at i-th position and return an array containing deleted element. Hence I am getting that deleted element by using 0-index position with [0]
+D> And  < arr.splice(i, 1)[0] > will delete 1 element at i-th position and return an array containing deleted element. Hence the [0] part will just give me that deleted element.
 
 This is how the splice is working here -
 
@@ -39,13 +40,11 @@ myArr.splice(0, 0, myArr.splice(1, 1)[0]);
 
 console.log(myArr); // => [ 1, 2, 3, 4 ]
 
-
-
-
     */
 
   for (let i = 0; i < array.length; i++ ) {
-    for ( let j = 1; j < i; j++ ) {
+
+    for ( let j = 0; j < arr.length; j++ ) {
 
       if ( array[i] < array[j] ) {
         array.splice( j, 0, array.splice(i, 1)[0] )
@@ -57,18 +56,5 @@ console.log(myArr); // => [ 1, 2, 3, 4 ]
 }
 
 const list = [54, 26, 93, 17, 77, 31, 44, 55, 20]
-console.log(insertionSort(list));
 
-// [ 17, 20, 26, 31, 44, 54, 55, 77, 93 ]
-
-/* for (let i = 1; i < array.length; i++ ) {
-  for ( let j = 0; j < i; j++ ) {
-
-    if ( array[i] < array[j] ) {
-      array.splice( j, 0, array.splice(i, 1)[0] )
-      break;
-    }
-  }
-}
-return array;
-} */
+console.log(insertionSort(list)); // => [ 17, 20, 26, 31, 44, 54, 55, 77, 93 ]

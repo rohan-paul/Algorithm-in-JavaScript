@@ -2,12 +2,21 @@ let arr = Array.from({ length: 20}, () => Math.floor(Math.random() * 20))
 // console.log(arr);
 var array1 = [9, 2, 5, 6, 4, 3, 7, 10, 1, 8];
 
-// swap helper function
-swap = (arr, i, j) => {
-  let temp = arr[i];
-  arr[i] = arr[j];
-  arr[j] = temp;
-}
+// swap helper function - good old version
+
+// swap = (arr, i, j) => {
+//   let temp = arr[i];
+//   arr[i] = arr[j];
+//   arr[j] = temp;
+// }
+
+/* Swap helper function using array destructuring, which is a way of initializing variables at once. So, the below code
+var [x, y] = ['a', 'b']; is the same as doing the following
+var x = 'a';
+var y = 'b';
+Book- Learning JavaScript Data Structures and Algorithms.pdf // page-40 */
+
+swap = (arr, i, j) => [arr[i], arr[j]] = [arr[j], arr[i]]
 
 // SOLUTION-1 - Necessary warning :) :) - this is a super basic implementation  to understand the principle behind bubble sort (going through all comparisons) but there's huge room for performance improvement on this.
 
