@@ -18,6 +18,8 @@ A> After the whole first pass is done, (i.e. after the first for loop for i = 0 
 
 See this for pictorial representation - http://codingmiles.com/sorting-algorithms-bubble-sort-using-javascript/
 
+So basically, the bubble sort algorithm can be easily optimized by observing that the n-th pass finds the n-th largest element and puts it into its final place. So, the inner loop can avoid looking at the last n − 1 items when running for the n-th time:
+
 B> In other words, after the first pass, the biggest elements is placed at its correct position.
 
 C) And this IS THE PRINCIPLE BASED ON WHICH I CAN IMPROVE THE ALGO BY REDUCING THE NO OF PASSES FOR THE INNER NESTED FOR LOOP EACH TIME - Meaning, for the second loop of i = 1 pass, I actually no more have to compare the right-most element. As I know the right-most element is the biggest and has been placed at its correct right-most position.
