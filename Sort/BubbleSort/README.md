@@ -11,6 +11,7 @@ bubble-sort should not be used for larger arrays, can be used for smaller ones f
 | --------------------- | :-------------: | :-----------------: | :-----------------: | :-------: | :-------: | :-------- |
 | **Bubble sort**       | n               | n<sup>2</sup>       | n<sup>2</sup>       | 1         | Yes       |           |
 
+The worst case scenario of this algorithm is quadratic — O(n²) — because it’s possible that the data will be the exact opposite of ordered. Best case scenario is linear — O(n) — because even if it’s entirely ordered, we have to check through each set of numbers.
 
 ## MOST IMPORTANT POINT OF BUBBLE SORT (And base of my solution SOLUTION-3 ) :-
 

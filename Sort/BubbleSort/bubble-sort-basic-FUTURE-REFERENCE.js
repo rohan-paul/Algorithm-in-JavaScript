@@ -69,7 +69,8 @@ bubbleSortBasicDescending = (arr) => {
 
 So, here, I only do the loops and swaps for the cases when I find a mis-placed element, i.e. larger-element placed before smaller in an ascending sort
 
-Remember the do-while syntax - the first do will execute anyway, but then the next while loop will ONLY execute if the condition of thw while is satisfied. In this case below, only after I find a mis-placed pair of elements, I flip 'swapped' to true. And only then while(swapped) gets satisfied > and only then the next while loop gets executed.
+Remember the do-while syntax - Unlike the while loop, the do-while loop always executes the body at least one before it evaluates the expression.
+So the first do will execute anyway, but then the next while loop will ONLY execute if the condition of thw while is satisfied. In this case below, only after I find a mis-placed pair of elements, I flip 'swapped' to true. And only then while(swapped) gets satisfied > and only then the next while loop gets executed.
 
 So, here, I traverse the array only once. And only the first time, I find a mis-placed element, that is I do an actual swap, do I make that variable 'swap' to be true.
 
