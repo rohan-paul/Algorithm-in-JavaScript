@@ -1,5 +1,7 @@
 # Quick Sort
 
+The quicksort algorithm basically works by partitioning the entire array, and then recursively partitioning the left and right parts of the array until the entire array is sorted. The left and right parts of the array are determined by the index returns after each partition operation. That index effectively becomes the boundary between the left and right parts of the array.
+
 The algorithm for Quicksort is:
 
 1. Pick a pivot element that divides the list into two sublists.
