@@ -1,8 +1,11 @@
 /*The algorithm for Quicksort is:
+
 1. Pick a pivot element that divides the list into two sublists.
 
 2. Reorder the list so that all elements less than the pivot element are placed before
 the pivot and all elements greater than the pivot are placed after it.
+
+3. After this partitioning, the pivot is in its final position. This is called the partition operation.
 
 3. Repeat steps 1 and 2 on both the list with smaller elements and the list of larger
 elements.
