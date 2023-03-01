@@ -17,7 +17,7 @@
   "devDependencies": {
     "babel-core": "^6.26.0",
     "chai": "^4.1.2",
-    "mocha": "^4.0.1",
+    "mocha": "^10.2.0",
     "tape": "^4.8.0"
   },
   "dependencies": {
